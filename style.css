@@ -1,0 +1,5 @@
+async function loadDragons() {
+  // сначала пробуем локальный кэш
+  const res = await fetch("dragons.json");
+  return await res.json();
+  }
