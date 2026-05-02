@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dragon Calculator V4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🐉 Dragon Adventures V4</header>
+
+<div class="container">
+
+  <div class="box">
+    <h2>You Give</h2>
+    <input placeholder="Search..." oninput="search(this.value,'give')">
+    <div id="give"></div>
+    <button onclick="addItem('give')">+ Add</button>
+    <div id="giveTotal">0</div>
+  </div>
+
+  <div class="box">
+    <h2>You Get</h2>
+    <input placeholder="Search..." oninput="search(this.value,'get')">
+    <div id="get"></div>
+    <button onclick="addItem('get')">+ Add</button>
+    <div id="getTotal">0</div>
+  </div>
+
+</div>
+
+<div id="result">Difference: 0</div>
+
+<script src="api.js"></script>
+<script src="parser.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
